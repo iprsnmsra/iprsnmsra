@@ -4,7 +4,7 @@
 
   <h1 align="center">
     <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"> 
-    System Online: Hey, what's up? I'm <a href="https://github.com/Mr-DaRkAgeNt">Prasoon Mishra</a>
+    System Online: Hey, what's up? I'm <a href="https://github.com/iamprsn08">Prasoon Mishra</a>
   </h1>
 
 <div align="center">
@@ -68,10 +68,10 @@
 
 <div align="center">
   <h3>⚡ CONTRIBUTION ACTIVITY</h3>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mr-DaRkAgeNt&theme=react&bg_color=0D1117&hide_border=true&area=true&color=39FF14" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamprsn08&theme=react&bg_color=0D1117&hide_border=true&area=true&color=39FF14" width="100%" />
 </div>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mr-DaRkAgeNt&theme=tokyonight&hide_border=true" alt="streak stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=iamprsn08&theme=tokyonight&hide_border=true" alt="streak stats" />
 </div>
 
 
@@ -109,7 +109,7 @@
   <a href="mailto:prasoonmishra9c@gmail.com"><img src="https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white"></a>
 
   <br /><br />
-  <img src="https://komarev.com/ghpvc/?username=Mr-DaRkAgeNt&label=PROFILE+VIEWS&color=39FF14&style=flat-square" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=iamprsn08&label=PROFILE+VIEWS&color=39FF14&style=flat-square" alt="Profile Views" />
 </div>
 
 <div align="center">
