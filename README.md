@@ -68,7 +68,7 @@
 
 <div align="center">
   <h3>⚡ CONTRIBUTION ACTIVITY</h3>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iamprsn08&theme=react&bg_color=0D1117&hide_border=true&area=true&color=39FF14" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=iprsnmsra&theme=react&bg_color=0D1117&hide_border=true&area=true&color=39FF14" width="100%" />
 </div>
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=iprsnmsra&theme=tokyonight&hide_border=true" alt="streak stats" />
