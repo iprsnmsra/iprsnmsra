@@ -2,15 +2,23 @@
   <img src="7847ecea51ed5dab456928bc9bf5213a.gif" width="100%" style="border-radius: 8px; box-shadow: 0px 0px 25px rgba(57, 255, 20, 0.4);" alt="Cyberpunk Header">
 </div>
 
-  <h1 align="center">
-    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"> 
-    System Online: Hey, what's up? I'm <a href="https://github.com/iprsnmsra">Prasoon Mishra</a>
-  </h1>
+<h1 align="center">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"> 
+  System Online: Hey, what's up? I'm <a href="https://github.com/iprsnmsra" style="color: #39FF14; text-decoration: none;">Prasoon Mishra</a>
+</h1>
 
 <div align="center">
   <br />
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=39FF14&background=00000000&center=true&vCenter=true&width=700&lines=CSE+GAMING+STUDENT;PROBLEM+SOLVING+WITH+CUT-EDGE+SOLUTIONS;VIBING+GAME+DEVELOPER;+FULL+STACK+WEB+DEVELOPER;BULKING+%7C+BLENDER+ARTIST+%7C+CREATOR" alt="Typing SVG" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=iprsnmsra&theme=radical&no-frame=true&no-bg=true&margin-w=15" alt="Prasoon's Trophies" style="filter: drop-shadow(0px 0px 15px rgba(57, 255, 20, 0.8));" />
   </a>
 </div>
 
@@ -52,16 +60,34 @@
 </table>
 
 <div align="center">
-  <h3>🛠️ TECH ARSENAL</h3>
+  <h3>🛠️ TECH Arsenal</h3>
   <img src="https://skillicons.dev/icons?i=cpp,java,python,cs,react,nodejs,express,mongodb,unity,unreal,blender,vscode&perline=12&theme=dark" />
 </div>
 
 <div align="center">
-  
-<h4> System Tools: </h4>
-<img src ="https://img.shields.io/badge/Terminal-Command%20Line-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white" />
-<img src="https://img.shields.io/badge/git-%23F05033.svg?style=flat-square&logo=git&logoColor=white" />
+  <h4> System Tools: </h4>
+  <img src="https://img.shields.io/badge/Terminal-Command%20Line-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=flat-square&logo=git&logoColor=white" />
+</div>
 
+<br />
+
+<div align="center" style="background-color: #000000; padding: 20px; border-radius: 10px; border: 1px solid #39FF14; box-shadow: 0px 0px 20px rgba(57, 255, 20, 0.15);">
+  <h3 style="color: #39FF14;">🎮 THE MATRIX DECRYPTER</h3>
+  <p><i> Click the terminal to bypass the firewall.</i></p>
+  <a href="#">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=4000&pause=500&color=39FF14&background=000000&center=true&vCenter=true&width=600&height=100&lines=>_INITIATING_BREACH...;>_BYPASSING_MAINFRAME...;>_ACCESS_GRANTED_[CLICK_TO_PLAY]" alt="Hacker Terminal" style="border: 1px solid #30363d; border-radius: 5px;" />
+  </a>
+  <br/><br/>
+  <a href="https://matrix-decrypter.vercel.app/"><img src="https://img.shields.io/badge/▶%20EXECUTE%20GAME.EXE-39FF14?style=for-the-badge&logo=codeforces&logoColor=black&labelColor=000000" alt="Play Game"></a>
+</div>
+
+<br />
+
+<div align="center">
+  <h3>🏙️ SYSTEM ARCHITECTURE: 3D COMMIT CITY</h3>
+  <p><i> My code contributions rendered as an isometric voxel world.</i></p>
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution City" style="border-radius: 8px; box-shadow: 0px 0px 15px rgba(57, 255, 20, 0.2);" />
 </div>
 
 <br />
@@ -70,10 +96,10 @@
   <h3>⚡ CONTRIBUTION ACTIVITY</h3>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=iprsnmsra&theme=react&bg_color=0D1117&hide_border=true&area=true&color=39FF14" width="100%" />
 </div>
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=iprsnmsra&theme=tokyonight&hide_border=true" alt="streak stats" />
-</div>
 
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=iprsnmsra&theme=tokyonight&hide_border=true&background=0d1117" alt="streak stats" />
+</div>
 
 <br />
 
@@ -98,9 +124,8 @@
 <br />
 
 <div align="center">
-  
   <h2 style="font-family: 'Georgia', serif; font-style: italic; color: #ffffff; letter-spacing: 1px;">
-   <h3><i>"Sometimes You Gotta Run Before You can Walk."</i></h3>
+    <h3><i>"Sometimes You Gotta Run Before You can Walk."</i></h3>
   </h2>
   
   <br />
@@ -113,4 +138,5 @@
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:39FF14,100:000000&height=80&section=footer&opacity=0.3" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:39FF14,100:000000&height=120&section=footer&opacity=0.5" width="100%" />
+</div>
