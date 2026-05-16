@@ -16,11 +16,6 @@
 
 <br />
 
-<div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=iprsnmsra&theme=radical&no-frame=true&no-bg=true&margin-w=15" alt="Prasoon's Trophies" style="filter: drop-shadow(0px 0px 15px rgba(57, 255, 20, 0.8));" />
-  </a>
-</div>
 
 <br />
 
