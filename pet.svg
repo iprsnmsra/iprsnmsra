@@ -1,0 +1,205 @@
+<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .roamer { animation: roam 40s linear infinite; }
+      .character-flip { animation: flip 40s linear infinite; transform-origin: 0 0; }
+      .speech-bubble { animation: talk 40s linear infinite; transform-origin: 0px 10px; }
+      .bubble-text-1 { opacity: 0; animation: text1 40s linear infinite; }
+      .bubble-text-2 { opacity: 0; animation: text2 40s linear infinite; }
+      .bubble-text-3 { opacity: 0; animation: text3 40s linear infinite; }
+      .bubble-text-4 { opacity: 0; animation: text4 40s linear infinite; }
+      
+      .thigh-left { transform-origin: -10px 48px; animation: thigh-run 0.6s infinite ease-in-out; }
+      .calf-left { transform-origin: -10px 60px; animation: calf-run 0.6s infinite ease-in-out; }
+      
+      .thigh-right { transform-origin: 10px 48px; animation: thigh-run 0.6s infinite ease-in-out; animation-delay: -0.3s; }
+      .calf-right { transform-origin: 10px 60px; animation: calf-run 0.6s infinite ease-in-out; animation-delay: -0.3s; }
+      
+      .upperarm-left { transform-origin: -16px 5px; animation: upperarm-run 0.6s infinite ease-in-out; }
+      .forearm-left { transform-origin: -16px 18px; animation: forearm-run 0.6s infinite ease-in-out; }
+      
+      .upperarm-right { transform-origin: 16px 5px; animation: upperarm-run 0.6s infinite ease-in-out; animation-delay: -0.3s; }
+      .forearm-right { transform-origin: 16px 18px; animation: forearm-run 0.6s infinite ease-in-out; animation-delay: -0.3s; }
+      
+      .luffy-body { animation: float 0.3s infinite alternate ease-in-out; }
+
+      @keyframes thigh-run {
+        0% { transform: rotate(-40deg); }
+        50% { transform: rotate(40deg); }
+        100% { transform: rotate(-40deg); }
+      }
+      @keyframes calf-run {
+        0% { transform: rotate(5deg); }
+        50% { transform: rotate(70deg); }
+        100% { transform: rotate(5deg); }
+      }
+      @keyframes upperarm-run {
+        0% { transform: rotate(45deg); }
+        50% { transform: rotate(-45deg); }
+        100% { transform: rotate(45deg); }
+      }
+      @keyframes forearm-run {
+        0% { transform: rotate(-60deg); }
+        50% { transform: rotate(-10deg); }
+        100% { transform: rotate(-60deg); }
+      }
+
+      @keyframes roam {
+        0%   { transform: translate(400px, 300px); }
+        5%   { transform: translate(150px, 300px); }
+        15%  { transform: translate(650px, 150px); }
+        25%  { transform: translate(650px, 450px); }
+        35%  { transform: translate(150px, 450px); }
+        45%  { transform: translate(150px, 150px); }
+        55%  { transform: translate(650px, 150px); }
+        65%  { transform: translate(150px, 450px); }
+        75%  { transform: translate(650px, 450px); }
+        85%  { transform: translate(150px, 150px); }
+        95%  { transform: translate(400px, 300px); }
+        100% { transform: translate(400px, 300px); }
+      }
+
+      @keyframes flip {
+        0%       { transform: scaleX(-1); } 
+        4.99%    { transform: scaleX(-1); }
+        5%       { transform: scaleX(1); }  
+        24.99%   { transform: scaleX(1); }
+        25%      { transform: scaleX(-1); } 
+        44.99%   { transform: scaleX(-1); }
+        45%      { transform: scaleX(1); }  
+        54.99%   { transform: scaleX(1); }
+        55%      { transform: scaleX(-1); } 
+        64.99%   { transform: scaleX(-1); }
+        65%      { transform: scaleX(1); }  
+        74.99%   { transform: scaleX(1); }
+        75%      { transform: scaleX(-1); } 
+        84.99%   { transform: scaleX(-1); }
+        85%      { transform: scaleX(1); }  
+        100%     { transform: scaleX(1); }
+      }
+
+      @keyframes talk {
+        2% { opacity: 0; transform: scale(0.5); }
+        5%, 12% { opacity: 1; transform: scale(1); }
+        15% { opacity: 0; transform: scale(0.5); }
+        
+        22% { opacity: 0; transform: scale(0.5); }
+        25%, 32% { opacity: 1; transform: scale(1); }
+        35% { opacity: 0; transform: scale(0.5); }
+
+        42% { opacity: 0; transform: scale(0.5); }
+        45%, 52% { opacity: 1; transform: scale(1); }
+        55% { opacity: 0; transform: scale(0.5); }
+
+        72% { opacity: 0; transform: scale(0.5); }
+        75%, 82% { opacity: 1; transform: scale(1); }
+        85% { opacity: 0; transform: scale(0.5); }
+        
+        0%, 100% { opacity: 0; transform: scale(0.5); }
+      }
+
+      @keyframes text1 { 0%, 15% { opacity: 1; } 16%, 100% { opacity: 0; } }
+      @keyframes text2 { 0%, 20% { opacity: 0; } 21%, 35% { opacity: 1; } 36%, 100% { opacity: 0; } }
+      @keyframes text3 { 0%, 40% { opacity: 0; } 41%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+      @keyframes text4 { 0%, 70% { opacity: 0; } 71%, 85% { opacity: 1; } 86%, 100% { opacity: 0; } }
+
+      @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-4px); } }
+    </style>
+    <clipPath id="headCrop">
+      <path d="M -60,-200 L 60,-200 L 60,-13 A 60,20 0 0 1 -60,-13 Z" />
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="600" fill="transparent" />
+
+  <g class="roamer">
+    <g class="character-flip">
+      <ellipse cx="0" cy="80" rx="35" ry="6" fill="#000" opacity="0.15" />
+      
+      <g class="luffy-body">
+        
+        <!-- Generated Image Head (Directly attached to chest) -->
+        <image href="luffy_face.png" x="-55" y="-86" width="110" height="110" clip-path="url(#headCrop)" preserveAspectRatio="xMidYMid slice" />
+
+        <path d="M -12,5 L 12,5 L 10,25 L -10,25 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+
+        <g stroke="#d17a7a" stroke-width="1.5" stroke-linecap="round">
+          <path d="M -6,12 L 6,22 M 6,12 L -6,22" />
+          <line x1="-2" y1="12" x2="0" y2="15" />
+          <line x1="-5" y1="17" x2="-3" y2="20" />
+          <line x1="2" y1="12" x2="0" y2="15" />
+          <line x1="5" y1="17" x2="3" y2="20" />
+        </g>
+
+        <path d="M -14,24 L 14,24 L 15,30 L -15,30 Z" fill="#fbc02d" stroke="#222" stroke-width="1.5" />
+        <path d="M -12,30 L -16,40 L -8,42 Z" fill="#fbc02d" stroke="#222" stroke-width="1.5" />
+
+        <path d="M -15,30 L 15,30 L 18,50 L 2,50 L 0,40 L -2,50 L -18,50 Z" fill="#214368" stroke="#222" stroke-width="1.5" />
+        <path d="M -19,50 Q -10,55 -1,50 Z" fill="white" stroke="#222" stroke-width="1.5" />
+        <path d="M 1,50 Q 10,55 19,50 Z" fill="white" stroke="#222" stroke-width="1.5" />
+
+        <path d="M -12,5 L -6,12 L -12,25 L -18,25 L -20,5 Z" fill="#e30000" stroke="#222" stroke-width="1.5" />
+        <path d="M 12,5 L 6,12 L 12,25 L 18,25 L 20,5 Z" fill="#e30000" stroke="#222" stroke-width="1.5" />
+
+        <!-- Left Arm (Articulated) -->
+        <g class="upperarm-left">
+          <path d="M -16,5 L -20,5 L -20,18 L -12,18 Z" fill="#e30000" stroke="#222" stroke-width="1.5" />
+          <path d="M -18,18 L -14,18 L -14,22 L -18,22 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+          
+          <g class="forearm-left">
+            <path d="M -18,18 L -14,18 L -12,32 L -20,32 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+            <circle cx="-16" cy="32" r="4.5" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+          </g>
+        </g>
+
+        <!-- Right Arm (Articulated) -->
+        <g class="upperarm-right">
+          <path d="M 16,5 L 20,5 L 20,18 L 12,18 Z" fill="#e30000" stroke="#222" stroke-width="1.5" />
+          <path d="M 18,18 L 14,18 L 14,22 L 18,22 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+          
+          <g class="forearm-right">
+            <path d="M 18,18 L 14,18 L 12,32 L 20,32 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+            <circle cx="16" cy="32" r="4.5" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+          </g>
+        </g>
+
+        <!-- Left Leg (Articulated) -->
+        <g class="thigh-left">
+          <path d="M -14,48 L -6,48 L -6,62 L -14,62 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+          <g class="calf-left">
+             <path d="M -14,60 L -6,60 L -6,74 L -14,74 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+             <path d="M -15,70 L -5,70 L -5,74 L -15,74 Z" fill="#8d6e63" stroke="#222" stroke-width="1.5" />
+             <path d="M -14,70 L -10,65 L -6,70" fill="none" stroke="#222" stroke-width="1.5" />
+          </g>
+        </g>
+
+        <!-- Right Leg (Articulated) -->
+        <g class="thigh-right">
+          <path d="M 6,48 L 14,48 L 14,62 L 6,62 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+          <g class="calf-right">
+             <path d="M 6,60 L 14,60 L 14,74 L 6,74 Z" fill="#ffcba4" stroke="#222" stroke-width="1.5" />
+             <path d="M 5,70 L 15,70 L 15,74 L 5,74 Z" fill="#8d6e63" stroke="#222" stroke-width="1.5" />
+             <path d="M 6,70 L 10,65 L 14,70" fill="none" stroke="#222" stroke-width="1.5" />
+          </g>
+        </g>
+
+      </g> <!-- end luffy-body -->
+    </g> <!-- end character-flip -->
+
+    <!-- Speech Bubble Layer -->
+    <g transform="translate(0, -135)">
+      <g class="speech-bubble">
+         <rect x="-140" y="-45" width="280" height="40" rx="15" fill="#ffffff" stroke="#111111" stroke-width="3" />
+         <polygon points="-10,-5 0,10 10,-5" fill="#ffffff" />
+         <polyline points="-10,-5 0,10 10,-5" fill="none" stroke="#111111" stroke-width="3" stroke-linejoin="round" />
+         <line x1="-8" y1="-5" x2="8" y2="-5" stroke="#ffffff" stroke-width="4" />
+         
+         <text class="bubble-text-1" x="0" y="-18" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">I'm gonna be King of the Pirates!</text>
+         <text class="bubble-text-2" x="0" y="-18" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">Do you have any meat?! 🍖</text>
+         <text class="bubble-text-3" x="0" y="-18" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">This repo looks awesome! ✨</text>
+         <text class="bubble-text-4" x="0" y="-18" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">Let's set sail! ⛵</text>
+      </g>
+    </g>
+
+  </g> <!-- end roamer -->
+</svg>
