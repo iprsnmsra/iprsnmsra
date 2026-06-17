@@ -1,0 +1,182 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      /* Main Roaming Animation */
+      .roam-container {
+        animation: roam 16s ease-in-out infinite;
+      }
+      
+      /* Flipping the character when turning around */
+      .character-flip {
+        animation: flip 16s infinite;
+        transform-origin: 0 0;
+      }
+
+      /* Hover Interaction for the SVG */
+      .character-flip:hover .eyes-normal { opacity: 0; }
+      .character-flip:hover .eyes-happy { opacity: 1; }
+      .character-flip:hover .heart { opacity: 1; animation: float-up 1s ease-out infinite; }
+
+      /* Floating up and down */
+      .body {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      /* Shadow shrinking when floating */
+      .shadow {
+        animation: shadow 3s ease-in-out infinite;
+        transform-origin: 0 40px;
+      }
+
+      /* Blinking eyes */
+      .eyes-normal {
+        animation: hide-blink 6s infinite;
+        transform-origin: 0 -4px;
+      }
+
+      /* Talk animations */
+      .speech-bubble {
+        opacity: 0;
+        animation: talk 16s infinite;
+        transform-origin: 0 -30px;
+      }
+      .bubble-text-1 { opacity: 0; animation: text1 16s infinite; }
+      .bubble-text-2 { opacity: 0; animation: text2 16s infinite; }
+      
+      /* Thruster flame */
+      .thruster {
+        animation: flame 0.5s infinite alternate;
+        transform-origin: 0 25px;
+      }
+
+      /* Keyframes */
+      @keyframes roam {
+        0% { transform: translateX(100px); }
+        35% { transform: translateX(650px); }
+        40% { transform: translateX(650px); }
+        85% { transform: translateX(100px); }
+        90% { transform: translateX(100px); }
+        100% { transform: translateX(100px); }
+      }
+
+      @keyframes flip {
+        0%, 35% { transform: scaleX(1); }
+        40%, 85% { transform: scaleX(-1); }
+        90%, 100% { transform: scaleX(1); }
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+
+      @keyframes shadow {
+        0%, 100% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(0.6); opacity: 0.15; }
+      }
+
+      @keyframes hide-blink {
+        0%, 96%, 98% { transform: scaleY(1); }
+        97%, 99% { transform: scaleY(0.1); }
+      }
+
+      @keyframes talk {
+        10%, 30%, 60%, 80% { opacity: 1; transform: translateY(0) scale(1); }
+        0%, 9%, 31%, 59%, 81%, 100% { opacity: 0; transform: translateY(10px) scale(0.9); }
+      }
+
+      @keyframes text1 {
+        10%, 30% { opacity: 1; }
+        0%, 9%, 31%, 100% { opacity: 0; }
+      }
+
+      @keyframes text2 {
+        60%, 80% { opacity: 1; }
+        0%, 59%, 81%, 100% { opacity: 0; }
+      }
+
+      @keyframes flame {
+        from { transform: scaleY(1); opacity: 0.8; }
+        to { transform: scaleY(1.4); opacity: 1; }
+      }
+      
+      @keyframes float-up {
+        0% { transform: translateY(0) scale(1); opacity: 1; }
+        100% { transform: translateY(-30px) scale(1.5); opacity: 0; }
+      }
+      
+      .heart { opacity: 0; }
+      .eyes-happy { opacity: 0; }
+    </style>
+  </defs>
+
+  <!-- Background Grid & Ground -->
+  <rect width="800" height="300" fill="transparent" />
+  <line x1="40" y1="260" x2="760" y2="260" stroke="#444c56" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 15" />
+  
+  <g class="roam-container">
+    <g transform="translate(0, 210)">
+      
+      <!-- Speech Bubble -->
+      <g class="speech-bubble" transform="translate(0, -110)">
+        <rect x="-100" y="-25" width="200" height="35" rx="10" fill="#22272e" stroke="#539bf5" stroke-width="2" />
+        <polygon points="-10,10 0,20 10,10" fill="#22272e" />
+        <line x1="-9" y1="10" x2="9" y2="10" stroke="#22272e" stroke-width="3" />
+        <polyline points="-10,10 0,20 10,10" fill="none" stroke="#539bf5" stroke-width="2" stroke-linejoin="round" />
+        <line x1="-9" y1="10" x2="9" y2="10" stroke="#22272e" stroke-width="3" />
+        
+        <text class="bubble-text-1" x="0" y="-1" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="14" fill="#adbac7" text-anchor="middle">Hi! Welcome to my repo! 👋</text>
+        <text class="bubble-text-2" x="0" y="-1" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="14" fill="#adbac7" text-anchor="middle">I love writing code! 💻✨</text>
+      </g>
+
+      <!-- Shadow -->
+      <ellipse class="shadow" cx="0" cy="50" rx="25" ry="5" fill="#000" />
+
+      <!-- Flipping Group (handles turn around) -->
+      <g class="character-flip">
+        
+        <!-- Floating Body -->
+        <g class="body">
+          <!-- Thruster -->
+          <path class="thruster" d="M -15,22 Q 0,65 15,22 Z" fill="#539bf5" />
+          
+          <!-- Antennas -->
+          <line x1="-20" y1="-25" x2="-35" y2="-45" stroke="#768390" stroke-width="3" stroke-linecap="round" />
+          <circle cx="-35" cy="-45" r="4" fill="#f47067">
+             <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <line x1="20" y1="-25" x2="35" y2="-45" stroke="#768390" stroke-width="3" stroke-linecap="round" />
+          <circle cx="35" cy="-45" r="4" fill="#f47067" />
+
+          <!-- Main Body -->
+          <rect x="-35" y="-25" width="70" height="50" rx="15" fill="#2d333b" stroke="#768390" stroke-width="3" />
+          
+          <!-- Screen -->
+          <rect x="-25" y="-17" width="50" height="26" rx="6" fill="#1c2128" />
+          
+          <!-- Eyes Normal (Blinking) -->
+          <g class="eyes-normal">
+            <circle cx="-12" cy="-4" r="4.5" fill="#539bf5" />
+            <circle cx="12" cy="-4" r="4.5" fill="#539bf5" />
+          </g>
+
+          <!-- Eyes Happy -->
+          <g class="eyes-happy">
+            <path d="M -18, -2 Q -12, -8 -6, -2" fill="none" stroke="#539bf5" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 6, -2 Q 12, -8 18, -2" fill="none" stroke="#539bf5" stroke-width="3" stroke-linecap="round"/>
+          </g>
+
+          <!-- Cheeks -->
+          <circle cx="-20" cy="3" r="3.5" fill="#f47067" opacity="0.6" />
+          <circle cx="20" cy="3" r="3.5" fill="#f47067" opacity="0.6" />
+          
+          <!-- Hover Heart -->
+          <g class="heart" transform="translate(0, -60)">
+             <path d="M 0,10 C -10,0 -20,15 0,30 C 20,15 10,0 0,10 Z" fill="#f47067" />
+          </g>
+
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
