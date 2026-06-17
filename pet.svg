@@ -1,0 +1,170 @@
+<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .roamer {
+        animation: roam 20s linear infinite;
+      }
+      .character-flip {
+        animation: flip 20s linear infinite;
+        transform-origin: 0 0;
+      }
+      .speech-bubble {
+        animation: talk 20s linear infinite;
+        transform-origin: 0 -80px;
+      }
+      .bubble-text-1 { opacity: 0; animation: text1 20s linear infinite; }
+      .bubble-text-2 { opacity: 0; animation: text2 20s linear infinite; }
+      .bubble-text-3 { opacity: 0; animation: text3 20s linear infinite; }
+      .bubble-text-4 { opacity: 0; animation: text4 20s linear infinite; }
+      
+      .leg-left { transform-origin: -11px 40px; animation: run-left 0.4s infinite alternate ease-in-out; }
+      .leg-right { transform-origin: 11px 40px; animation: run-right 0.4s infinite alternate ease-in-out; }
+      .arm-left { transform-origin: -15px 5px; animation: swing-left 0.4s infinite alternate ease-in-out; }
+      .arm-right { transform-origin: 15px 5px; animation: swing-right 0.4s infinite alternate ease-in-out; }
+      .luffy-body { animation: float 1s infinite alternate ease-in-out; }
+
+      @keyframes roam {
+        0%   { transform: translate(150px, 150px); }
+        20%  { transform: translate(650px, 450px); }
+        25%  { transform: translate(650px, 450px); }
+        45%  { transform: translate(150px, 450px); }
+        50%  { transform: translate(150px, 450px); }
+        70%  { transform: translate(650px, 150px); }
+        75%  { transform: translate(650px, 150px); }
+        95%  { transform: translate(150px, 150px); }
+        100% { transform: translate(150px, 150px); }
+      }
+
+      @keyframes flip {
+        0%, 20%  { transform: scaleX(1); }
+        25%, 45% { transform: scaleX(-1); }
+        50%, 70% { transform: scaleX(1); }
+        75%, 95% { transform: scaleX(-1); }
+        100%     { transform: scaleX(1); }
+      }
+
+      @keyframes talk {
+        18%, 27% { opacity: 1; transform: scale(1); }
+        43%, 52% { opacity: 1; transform: scale(1); }
+        68%, 77% { opacity: 1; transform: scale(1); }
+        93%, 100% { opacity: 1; transform: scale(1); }
+        0%, 2% { opacity: 1; transform: scale(1); }
+        
+        8%, 16% { opacity: 0; transform: scale(0.8); }
+        29%, 41% { opacity: 0; transform: scale(0.8); }
+        54%, 66% { opacity: 0; transform: scale(0.8); }
+        79%, 91% { opacity: 0; transform: scale(0.8); }
+      }
+
+      @keyframes text1 { 0%, 2%, 93%, 100% { opacity: 1; } 3%, 92% { opacity: 0; } }
+      @keyframes text2 { 18%, 27% { opacity: 1; } 0%, 17%, 28%, 100% { opacity: 0; } }
+      @keyframes text3 { 43%, 52% { opacity: 1; } 0%, 42%, 53%, 100% { opacity: 0; } }
+      @keyframes text4 { 68%, 77% { opacity: 1; } 0%, 67%, 78%, 100% { opacity: 0; } }
+
+      @keyframes run-left { 0% { transform: rotate(-30deg); } 100% { transform: rotate(30deg); } }
+      @keyframes run-right { 0% { transform: rotate(30deg); } 100% { transform: rotate(-30deg); } }
+      @keyframes swing-left { 0% { transform: rotate(40deg); } 100% { transform: rotate(-40deg); } }
+      @keyframes swing-right { 0% { transform: rotate(-40deg); } 100% { transform: rotate(40deg); } }
+      @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-5px); } }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="transparent" />
+
+  <g class="roamer">
+    <!-- Speech Bubble centered perfectly above Luffy -->
+    <g class="speech-bubble" transform="translate(0, -110)">
+       <rect x="-140" y="-35" width="280" height="40" rx="15" fill="#ffffff" stroke="#111111" stroke-width="3" />
+       <polygon points="-10,5 0,20 10,5" fill="#ffffff" />
+       <polyline points="-10,5 0,20 10,5" fill="none" stroke="#111111" stroke-width="3" stroke-linejoin="round" />
+       <line x1="-8" y1="5" x2="8" y2="5" stroke="#ffffff" stroke-width="4" />
+       
+       <text class="bubble-text-1" x="0" y="-8" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">I'm gonna be King of the Pirates!</text>
+       <text class="bubble-text-2" x="0" y="-8" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">Do you have any meat?! 🍖</text>
+       <text class="bubble-text-3" x="0" y="-8" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">This repo looks awesome! ✨</text>
+       <text class="bubble-text-4" x="0" y="-8" font-family="'Comic Sans MS', sans-serif" font-weight="bold" font-size="15" fill="#111" text-anchor="middle">Let's set sail! ⛵</text>
+    </g>
+
+    <g class="character-flip">
+      <!-- Shadow under Luffy -->
+      <ellipse cx="0" cy="70" rx="25" ry="5" fill="#000" opacity="0.15" />
+      
+      <g class="luffy-body">
+        <!-- Back Hair -->
+        <polygon points="-25,-30 -30,-20 -20,-10 -15,-5 -5,-15 0,-10 5,-15 15,-5 20,-10 30,-20 25,-30" fill="#111111" />
+        
+        <!-- Hat Brim (Back) -->
+        <ellipse cx="0" cy="-55" rx="45" ry="12" fill="#fada5e" stroke="#d4af37" stroke-width="2"/>
+        
+        <!-- Hat Dome -->
+        <path d="M -25,-55 C -25,-95 25,-95 25,-55 Z" fill="#fada5e" stroke="#d4af37" stroke-width="2"/>
+        
+        <!-- Hat Band -->
+        <path d="M -24.5,-55 C -15,-48 15,-48 24.5,-55 C 15,-58 -15,-58 -24.5,-55 Z" fill="#e30000"/>
+
+        <!-- Neck -->
+        <rect x="-4" y="-15" width="8" height="15" fill="#e5b894" />
+
+        <!-- Face -->
+        <circle cx="0" cy="-35" r="22" fill="#ffcca3" />
+
+        <!-- Front Hair Bangs -->
+        <path d="M -20,-55 L -22,-43 L -15,-48 L -8,-40 L -2,-48 L 4,-40 L 10,-48 L 17,-43 L 20,-55 Z" fill="#111111" />
+
+        <!-- Eyes -->
+        <circle cx="-9" cy="-32" r="3.5" fill="#111" />
+        <circle cx="9" cy="-32" r="3.5" fill="#111" />
+
+        <!-- Smile -->
+        <path d="M -10,-22 Q 0,-10 10,-22 Z" fill="#fff" stroke="#111" stroke-width="1.5" />
+
+        <!-- Scar -->
+        <g stroke="#b07050" stroke-width="1.5" fill="none">
+          <path d="M 5,-23 Q 9,-20 13,-23" />
+          <line x1="7" y1="-24" x2="7" y2="-20" />
+          <line x1="9" y1="-24" x2="9" y2="-19" />
+          <line x1="11" y1="-24" x2="11" y2="-20" />
+        </g>
+
+        <!-- Chest -->
+        <rect x="-12" y="-3" width="24" height="23" fill="#ffcca3" />
+
+        <!-- Sash -->
+        <rect x="-15" y="20" width="30" height="8" rx="2" fill="#fbc02d" />
+
+        <!-- Shorts -->
+        <path d="M -16,25 L 16,25 L 18,45 L 2,45 L 0,35 L -2,45 L -18,45 Z" fill="#214368" />
+
+        <!-- Shirt Vest (Open) -->
+        <path d="M -16,-4 L -6,6 L -10,22 L -18,22 Z" fill="#e30000" />
+        <path d="M 16,-4 L 6,6 L 10,22 L 18,22 Z" fill="#e30000" />
+
+        <!-- Left Leg -->
+        <g class="leg-left">
+          <rect x="-14" y="40" width="6" height="22" fill="#ffcca3" />
+          <rect x="-16" y="60" width="10" height="4" fill="#3e2723" />
+          <line x1="-18" y1="64" x2="-4" y2="64" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+        </g>
+
+        <!-- Right Leg -->
+        <g class="leg-right">
+          <rect x="8" y="40" width="6" height="22" fill="#ffcca3" />
+          <rect x="6" y="60" width="10" height="4" fill="#3e2723" />
+          <line x1="4" y1="64" x2="18" y2="64" stroke="#8d6e63" stroke-width="3" stroke-linecap="round"/>
+        </g>
+
+        <!-- Left Arm -->
+        <g class="arm-left">
+          <path d="M -14,0 L -30,15 L -26,20 L -10,5 Z" fill="#ffcca3" />
+          <circle cx="-28" cy="18" r="4" fill="#ffcca3" />
+        </g>
+
+        <!-- Right Arm -->
+        <g class="arm-right">
+          <path d="M 14,0 L 30,15 L 26,20 L 10,5 Z" fill="#ffcca3" />
+          <circle cx="28" cy="18" r="4" fill="#ffcca3" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
