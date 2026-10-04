@@ -11,7 +11,7 @@
 
 <img src="assets/identity.svg" alt="Pipeline: problem, abstraction, pattern, implementation, verification, world, with a loop back to the next problem." width="100%">
 
-I'm a CS undergrad at VIT Bhopal (Gaming Technology specialization, 2024–2028). I like the part of engineering where a messy problem becomes a clean abstraction, then a pattern, then something that runs, passes tests, and ships. Algorithms are how I think. Games are where I want that thinking to live.
+I like the part of engineering where a messy problem becomes a clean abstraction, then a pattern, then something that runs, passes tests, and ships. Algorithms are how I think. Games are where I want that thinking to live.
 
 <br>
 
