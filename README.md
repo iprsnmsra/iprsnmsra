@@ -1,15 +1,17 @@
-<img src="assets/hero.svg" alt="PRASOON MISHRA. Jarvis online. Sometimes you gotta run before you can walk." width="90%">
+<div align="center">
 
-<img src="assets/skills.svg" alt="Core approach: problem solving, algorithm design, database management, CI/CD workflows, automation. Stack: C++, Java, Python, JavaScript, SQL, GitHub Actions, Node.js, React, Next.js, AWS, Vercel, Unity, Unreal Engine, Blender." width="70%">
+<img src="assets/hero.svg" alt="Prasoon Mishra — orbital system of languages" width="100%">
 
-<img src="assets/manifesto.svg" alt="Software tools, solutions, agentic AI and game development, orbiting one obsession: building." width="70%">
+<img src="assets/pendulum.svg" alt="Pendulum wave of skills" width="100%">
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,java,py,js,html,css,cs,react,nodejs,nextjs,git,github,githubactions,aws,vercel,unity,unreal,blender&theme=dark&perline=18" alt="Technology icons" width="70%">
-</p>
+<a href="https://iprsnmsra.vercel.app/"><img src="assets/rope_portfolio.svg" alt="Portfolio" width="31%"></a>
+<a href="https://www.linkedin.com/in/iprsnmsra"><img src="assets/rope_linkedin.svg" alt="LinkedIn" width="31%"></a>
+<a href="mailto:prasoonmishra9c@gmail.com"><img src="assets/rope_email.svg" alt="Email" width="31%"></a>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=iprsnmsra&theme=dark&hide_border=true&background=090D12&ring=5B8CFF&fire=FFB347&currStreakNum=E8ECF1&sideNums=E8ECF1&currStreakLabel=5B8CFF&sideLabels=6B7A8C&dates=6B7A8C" alt="GitHub streak" height="170">
-  &nbsp;
-  <img src="assets/panda.svg" alt="A gaming panda eating a burger; every bite unlocks a game-tech role." height="170">
-</p>
+<a href="https://github.com/iprsnmsra/vigil"><img src="assets/card_vigil.svg" alt="Vigil" width="31%"></a>
+<a href="https://kestrel-ai-threat-analyzer.vercel.app/"><img src="assets/card_kestrel.svg" alt="Kestrel" width="31%"></a>
+<a href="https://github.com/iprsnmsra/AnimeBill"><img src="assets/card_animebill.svg" alt="AnimeBill" width="31%"></a>
+
+<img src="assets/footer.svg" alt="Compiled by itself" width="100%">
+
+</div>
